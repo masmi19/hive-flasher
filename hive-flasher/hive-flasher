@@ -173,7 +173,7 @@ function install () {
 				typeset -i RIG_ID="$RIG_ID"
 				if [[ $RIG_ID -gt 0 ]]; then
 					echo -e "New RIG_ID=${GREEN}$RIG_ID${NOCOLOR}"
-					FARM_HASH=
+					FARM_HASH=51240c070ab7982858c631daeb69f8810becb646
 					rig_conf=$(sed "s/^FARM_HASH=.*\$/FARM_HASH=/g" <<< "$rig_conf")
 					sleep 2
 					break
